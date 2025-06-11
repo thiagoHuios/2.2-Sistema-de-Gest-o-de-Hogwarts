@@ -1,12 +1,12 @@
 {
-    "name": "angelo/php-poo-skeleton",
+    "name": "Grupo Anistemi - Hogorts",
     "type": "library",
-    "description": "PHP POO Skeleton is a base project used in Object-Oriented Programming (OOP) classes for undergraduate program in Systems Analysis and Development, Computer Science and Software Engineering.",
+    "description": "Com base no PDF anexo contendo os épicos, histórias de usuário e funcionamento do Sistema de Gestão de Hogwarts, vocês deverão, em 6 equipes, realizar a implementação completa desse sistema, utilizando a linguagem PHP, orientação a objetos e o padrão PSR-4 Autoload.",
     "license": "MIT",
     "authors": [
         {
-            "name": "Angelo Mesquita",
-            "email": "angeloamesquita@gmail.com"
+            "name": "Thiago, Cassio, Andre, Paulo Gabreiel",
+            "email": "thiagobrito2016br@gmail.com"
         }
     ],
     "autoload": {
