@@ -1,56 +1,19 @@
 <?php
 
-namespace App\Model\AlunoConvite;
+namespace App\Models\alunoConvite;
+use App\Models\alunoConvite\Pessoa;
 
-class Aluno
+class Aluno extends Pessoa
 {
-    private string $nome;
-    private int $idade;
-    private string $email;
-    private string $statusConvite;
+    private bool $conviteRecebido = false;
 
-    public function __construct(string $nome, int $idade, string $email)
+    public function confirmarRecebimento(): void
     {
-        $this->nome = $nome;
-        $this->idade = $idade;
-        $this->email = $email;
-        $this->statusConvite = 'Pendente';
+        $this->conviteRecebido = true;
     }
 
-    public function getNome(): string
+    public function conviteFoiRecebido(): bool
     {
-        return $this->nome;
-    }
-
-    public function getIdade(): int
-    {
-        return $this->idade;
-    }
-
-    public function getEmail(): string
-    {
-        return $this->email;
-    }
-
-    public function getStatusConvite(): string
-    {
-        return $this->statusConvite;
-    }
-
-    public function confirmarConvite(): void
-    {
-        $this->statusConvite = 'Confirmado';
-    }
-
-    public function enviarConvite(): void
-    {
-        echo "🦉 Carta enviada para {$this->nome} ({$this->email})!\n";
-        echo "Conteúdo da carta:\n";
-        echo "-------------------------------------------\n";
-        echo "Olá {$this->nome},\n";
-        echo "Você foi aceito em Hogwarts!\n";
-        echo "O embarque será no Expresso de Hogwarts dia 1º de setembro.\n";
-        echo "Leve sua varinha, livros e caldeirão.\n";
-        echo "-------------------------------------------\n\n";
+        return $this->conviteRecebido;
     }
 }
