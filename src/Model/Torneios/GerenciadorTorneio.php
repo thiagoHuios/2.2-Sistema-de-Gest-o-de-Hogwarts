@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Models\Torneios;
+namespace App\Model\Torneios;
+use App\Model\Contratos\TorneioInterface;
 
-class GerenciadorTorneio
+class GerenciadorTorneio implements TorneioInterface
 {
     private array $torneios = [];
 

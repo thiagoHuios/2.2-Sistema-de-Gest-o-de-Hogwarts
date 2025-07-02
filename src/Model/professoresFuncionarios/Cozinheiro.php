@@ -1,8 +1,8 @@
 <?php
 
-namespace Models;
+namespace App\Models\ProfessoresFuncionarios;
 
-require_once __DIR__ . '/Funcionario.php';
+use App\Model\ProfessoresFuncionarios\Funcionario;
 
 class Cozinheiro extends Funcionario
 {

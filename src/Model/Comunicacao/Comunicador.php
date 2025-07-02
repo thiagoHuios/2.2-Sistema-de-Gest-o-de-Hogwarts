@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Models\Comunicacao;
+namespace App\Model\Comunicacao;
+use App\Model\Contratos\Comunicavel;
 
-class Comunicador
+class Comunicador implements Comunicavel
 {
     private array $alertas = [];
 

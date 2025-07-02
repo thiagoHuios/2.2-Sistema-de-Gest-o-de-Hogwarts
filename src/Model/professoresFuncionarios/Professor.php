@@ -1,5 +1,8 @@
 <?php
-namespace Models;
+
+namespace App\Models\ProfessoresFuncionarios;
+
+use App\Model\ProfessoresFuncionarios\Funcionario;
 
 class Professor extends Funcionario
 {

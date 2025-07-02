@@ -1,17 +1,17 @@
 <?php
 
-namespace Models\SelecaoCasas;
+namespace App\Model\SelecaoCasas;
 
 class Aluno
 {
-    public $nome;
-    public $coragem;
-    public $lealdade;
-    public $empatia;
-    public $ambicao;
-    public $casa;
+    private string $nome;
+    private int $coragem;
+    private int $lealdade;
+    private int $empatia;
+    private int $ambicao;
+    private ?string $casa = null;
 
-    public function __construct($nome, $coragem, $lealdade, $empatia, $ambicao)
+    public function __construct(string $nome, int $coragem, int $lealdade, int $empatia, int $ambicao)
     {
         $this->nome = $nome;
         $this->coragem = $coragem;
@@ -19,5 +19,13 @@ class Aluno
         $this->empatia = $empatia;
         $this->ambicao = $ambicao;
     }
+
+    public function getNome(): string { return $this->nome; }
+    public function getCoragem(): int { return $this->coragem; }
+    public function getLealdade(): int { return $this->lealdade; }
+    public function getEmpatia(): int { return $this->empatia; }
+    public function getAmbicao(): int { return $this->ambicao; }
+    public function getCasa(): ?string { return $this->casa; }
+
+    public function setCasa(string $casa): void { $this->casa = $casa; }
 }
-?>

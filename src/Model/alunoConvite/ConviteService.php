@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Models;
+namespace App\Model\AlunoConvite;
+use App\Model\Contratos\ConviteInterface;
 
-class ConviteService
+class ConviteService implements ConviteInterface
 {
     private array $alunos = [];
 

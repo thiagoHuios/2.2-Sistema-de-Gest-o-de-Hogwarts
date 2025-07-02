@@ -1,10 +1,10 @@
 <?php
 
-namespace Models\SelecaoCasas;
+namespace App\Model\SelecaoCasas;
 
 class Moderador
 {
-    public $casas;
+    private array $casas;
 
     public function __construct()
     {
@@ -16,18 +16,22 @@ class Moderador
         ];
     }
 
-    public function registrarAluno(Aluno $aluno, ChapeuSeletor $chapeu)
+    public function registrarAluno(Aluno $aluno, ChapeuSeletor $chapeu): void
     {
         $nomeCasa = $chapeu->escolherCasa($aluno);
-        $aluno->casa = $nomeCasa;
+        $aluno->setCasa($nomeCasa);
         $this->casas[$nomeCasa]->adicionarAluno($aluno);
     }
 
-    public function mostrarDistribuicao()
+    public function mostrarDistribuicao(): void
     {
         foreach ($this->casas as $casa) {
-            echo $casa->nome . ': ' . $casa->contarAlunos() . PHP_EOL;
+            echo $casa->getNome() . ': ' . $casa->contarAlunos() . PHP_EOL;
         }
     }
+
+    public function getCasas(): array
+    {
+        return $this->casas;
+    }
 }
-?>

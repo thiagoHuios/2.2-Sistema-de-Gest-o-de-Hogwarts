@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models\Comunicacao;
+namespace App\Model\Comunicacao;
 
 class Alerta
 {
-    public string $destinatario;
-    public string $mensagem;
+    private string $destinatario;
+    private string $mensagem;
 
     public function __construct(string $destinatario, string $mensagem)
     {
@@ -13,8 +13,28 @@ class Alerta
         $this->mensagem = $mensagem;
     }
 
-    public function exibir()
+    public function exibir(): void
     {
         echo "📢 {$this->destinatario}: {$this->mensagem}\n";
+    }
+
+    public function getDestinatario(): string
+    {
+        return $this->destinatario;
+    }
+
+    public function setDestinatario(string $destinatario): void
+    {
+        $this->destinatario = $destinatario;
+    }
+
+    public function getMensagem(): string
+    {
+        return $this->mensagem;
+    }
+
+    public function setMensagem(string $mensagem): void
+    {
+        $this->mensagem = $mensagem;
     }
 }

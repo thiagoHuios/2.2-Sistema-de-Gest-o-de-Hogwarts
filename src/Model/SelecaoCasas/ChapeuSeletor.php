@@ -1,6 +1,6 @@
 <?php
 
-namespace Models\SelecaoCasas;
+namespace App\Models\SelecaoCasas;
 
 class ChapeuSeletor
 {
