@@ -1,5 +1,5 @@
 {
-    "name": "Grupo Anistemi - Hogorts",
+    "name": "Grupo Anistemi - hogwarts",
     "type": "library",
     "description": "Com base no PDF anexo contendo os épicos, histórias de usuário e funcionamento do Sistema de Gestão de Hogwarts, vocês deverão, em 6 equipes, realizar a implementação completa desse sistema, utilizando a linguagem PHP, orientação a objetos e o padrão PSR-4 Autoload.",
     "license": "MIT",

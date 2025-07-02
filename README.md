@@ -1,11 +1,33 @@
-# Base 🐘 PHP POO Skeleton
+# Sistema de Gestão de Hogwarts 🧙‍♂️
 
-[![PHP Version](https://img.shields.io/badge/php-8.1%2B-blue)](https://www.php.net/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Composer](https://img.shields.io/badge/Autoload-PSR--4-orange)](https://getcomposer.org/doc/04-schema.md#autoload)
+## 👥 Integrantes da equipe
+- Thiago
+- Cassio
+- Andre
+- Paulo Gabriel
+
+## 📦 Módulos implementados
+
+- ✅ Módulo 1: Convite e Cadastro de Alunos
+- ✅ Módulo 2: Seleção de Casas
+- ✅ Módulo 3: Gerenciamento de Torneios e Competições
+- ✅ Módulo 4: Controle Acadêmico e Disciplinar
+- ✅ Módulo 5: Gerenciamento de Professores e Funcionários
+- ✅ Módulo 6: Sistema de Alertas e Comunicação
+
+## ▶️ Instruções de execução
+
+1. Clone o repositório ou baixe o projeto.
+2. Instale as dependências com o Composer:
+3. Certifique-se de que o autoload está atualizado:
+4. Execute o sistema via terminal:
+
+
+## 📋 Requisitos
+
+- PHP 8.1 ou superior
+- Composer instalado
 
 ---
 
-## 🇧🇷 Português
-
-Com base no PDF anexo contendo os épicos, histórias de usuário e funcionamento do Sistema de Gestão de Hogwarts, vocês deverão, em 6 equipes, realizar a implementação completa desse sistema, utilizando a linguagem PHP, orientação a objetos e o padrão PSR-4 Autoload.
+Sistema desenvolvido com base nos épicos e histórias de usuário descritos no projeto "Hogwarts CLI" da disciplina de Programação Orientada a Objetos.
